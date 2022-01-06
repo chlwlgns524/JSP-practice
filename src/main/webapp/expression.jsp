@@ -4,11 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JSP Expressions</title>
+<title>JSP Declaration</title>
 </head>
 <body>
-	<p>Converting a String to the upper-case version : <%= new String("hello! world!").toUpperCase() %></p>
-	<p>A simple arithmetic : 25 * 4 = <%= 25 * 4 %></p>
-	<p>Is 65 less than 75? : <%= 65 < 75 %>
+	<%! 
+		public String makeUpperCase(String str) {
+			return str.toUpperCase();
+		}	
+	%>
+	
+	<p>The lower case version of "hello world!" is : <%= makeUpperCase("Hello World!") %></p>
+	
 </body>
 </html>
