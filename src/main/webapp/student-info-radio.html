@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Process student-info-radio.html</title>
+</head>
+<body>
+	<div>
+		<form action="student-info-radio-confirmation.jsp">
+			<p><label>First Name: <input type="text" name="firstName" /></label></p>
+			<p><label>Last Name: <input type="text" name="lastName" /></label></p>
+			
+			<select name="country">
+				<option>Korea</option>
+				<option>Japan</option>
+				<option>America</option>
+			</select>
+			<br />
+			<div>
+				<p>Which one is the most favorite programming language?</p>
+				<label><input type="radio" name="programmingLanguage" value="java"/>Java</label>
+				<label><input type="radio" name="programmingLanguage" value="C"/>C</label>
+				<label><input type="radio" name="programmingLanguage" value="C++"/>C++</label>
+			</div>
+			<br />
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+</body>
+</html>

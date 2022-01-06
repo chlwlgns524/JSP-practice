@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Process student-info-checkbox.html</title>
+</head>
+<body>
+	<div>
+		<form action="student-info-checkbox-confirmation.jsp">
+			<p><label>First Name: <input type="text" name="firstName" /></label></p>
+			<p><label>Last Name: <input type="text" name="lastName" /></label></p>
+			<br />
+			<select name="country">
+				<option value="korea">Korea</option>
+				<option value="japan">Japan</option>
+				<option value="china">China</option>
+			</select>
+			<br /><br /><br />
+			<div>
+				<label><input type="radio" name="sex" value="male"/> male</label>
+				<label><input type="radio" name="sex" value="female"/> female</label>
+			</div>
+			<br />
+			<div>
+				<p>Which programming language are you using?</p>
+				<label><input type="checkbox" name="programmingLanguage" value="C++"/>C++ </label>
+				<label><input type="checkbox" name="programmingLanguage" value="java"/>Java </label>
+				<label><input type="checkbox" name="programmingLanguage" value="Python"/>Python </label>
+				<label><input type="checkbox" name="programmingLanguage" value="JavaScript"/>JavaScript </label>
+			</div>
+			<br /><br /><br />
+			<input type="submit" value="Submit"/>
+		</form>
+	</div>
+</body>
+</html>

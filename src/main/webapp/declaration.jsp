@@ -4,15 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JSP Scriptlet</title>
+<title>JSP Declaration</title>
 </head>
 <body>
-	<h1>Print some sentences using java for loop!</h1>
 	
-	<%
-		for (int i = 0; i < 5; i++)
-			out.println("Print some sentences using java for loop! : "
-					+ (i + 1) + "<br />");
+	<%! 
+		public String makeUpperCase(String str) {
+			return str.toUpperCase();
+		}	
 	%>
+	
+	<p>The lower case version of "hello world!" is : <%= makeUpperCase("Hello World!") %></p>
+	
 </body>
 </html>
