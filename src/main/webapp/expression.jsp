@@ -7,6 +7,7 @@
 <title>JSP Declaration</title>
 </head>
 <body>
+	
 	<%! 
 		public String makeUpperCase(String str) {
 			return str.toUpperCase();
