@@ -1,4 +1,4 @@
-# JSP and Servlet Overview
+# JSP and Servlet with JDBC
 
 
 
