@@ -14,3 +14,6 @@
 ## Key Building Blocks
 - JSPs and Servlets are key components of the Java Enterprise Edition (Java EE)
 - Popular MVC frameworks are actually built on top of JSP and Sevlet such as Spring, JSF and Struts
+
+# State Management with JSP
+
