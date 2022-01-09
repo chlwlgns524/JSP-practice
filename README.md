@@ -1,6 +1,3 @@
-# JSP and Servlet with JDBC
-
-
 
 
 
