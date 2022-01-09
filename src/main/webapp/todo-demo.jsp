@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Todo List</title>
 </head>
 <body>
 	<form action="todo-demo.jsp">
@@ -26,7 +26,8 @@
 				items = new ArrayList<String>();
 				session.setAttribute("toDoItems", items);
 			}
-			items.add(toDoItem);
+			if (!toDoItem.equals(""))
+				items.add(toDoItem);
 			
 			for (String item : items)
 				out.write("<li>" + item + "</li>");	
