@@ -1,4 +1,4 @@
-# Getting Started with JSP
+# JSP Fundametals
 
 ## What are JSP and Servlet?
 - Java code that runs on the web server
