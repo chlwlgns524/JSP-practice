@@ -15,6 +15,52 @@
 
 # JSP Fundametals
 
+### What is a JSP file?
+- An HTML page with some Java code sprinkled in.
+- Include dynamic content from Java code.
+
+### Where is the JSP processed?
+- JSP is processed on the server.
+- Result of Java code included in HTML returned to browser.
+
+### Where to place JSP file?
+- The JSP file goes in the WebContent(or webapp) folder.
+- Must have .jsp extension.
+
+### JSP Scripting Elements
+| Element | Syntax |
+| ------ | ------ |
+| JSP Expression | **<%=** some java expression **%>** |
+| JSP Scriptlet | **<%** some Java code : 1 to many lines **%>** |
+| JSP Declaration | **<%!** variable or method declaration **%>** |
+
+## 1. JSP Expressions
+- Compute an expression.
+- Result is included in HTML returned to browser.  
+  
+_Code example_
+```java
+<%= new String("Hello World").toUpperCase() %> // HELLO WORLD
+<%= 25 * 4 %> // 100
+<%= 75 < 69 %> // false
+
+```
+## 2. JSP Scriptlets
+- Insert 1 to many lines of Java code.
+- To include content in the page use: **out.println(...)**  
+  
+_Code example_
+```java
+<%
+  for (int i = 1; i <= 3; i++)
+    out.println("<br />Hello World! - " + i);
+%>
+/*
+  Hello World! - 1
+  Hello World! - 2
+  Hello World! - 3
+*/
+```
 ---
 
 # State Management with JSP
