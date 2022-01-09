@@ -113,7 +113,7 @@ session.setAtrribute("myToDoList", items);
 ```
 
 ### Retrieve data from session object
-_Method Signature_
+_Method signature_
 ``` java
 Object session.getAtrribute(String name)
 ```
