@@ -1,4 +1,4 @@
-# JSP and Servlet
+# 1. JSP and Servlet
 
 **What are JSP and Servlet?**
 - Java code that runs on the web server.
@@ -13,7 +13,7 @@
 
 ---
 
-# JSP Fundametals
+# 2. JSP Fundametals
 
 **What is a JSP file?**
 - An HTML page with some Java code sprinkled in.
@@ -36,7 +36,7 @@
   
   
   
-## 1. JSP Expressions
+## 2.1. JSP Expressions
 - Compute an expression.
 - Result is included in HTML returned to browser.  
   
@@ -47,7 +47,7 @@ _Code example_
 <%= 75 < 69 %> // false
 
 ```
-## 2. JSP Scriptlets
+## 2.2. JSP Scriptlets
 - Insert 1 to many lines of Java code.
 - To include content in the page use: **out.println(...)**
 - Minimize the amount of scriptlet code in a JSP.
@@ -61,7 +61,7 @@ _Code example_
     out.println("<br />Hello World! - " + i);
 %>
 ```
-## 3. JSP Declarations
+## 2.3. JSP Declarations
 - Declare a method in the JSP page.
 - Call the method in the same JSP page.
 - Minimize the amount of scriptlet code in a JSP.
@@ -78,7 +78,7 @@ _Code example_
 
 Lower case "Hello World": <%= makeItLower("Hello World") %> // hello world
 ```
-## 4. JSP Builit-In Server Objects
+## 2.4. JSP Builit-In Server Objects
 - Given for free.
 - Use them directly in JSP pages.
   
@@ -93,9 +93,9 @@ _List of commonly used JSP objects_
 
 ---
 
-# State Management with JSP
+# 3. State Management with JSP
 
-## 1. Session Tracking with JSP
+## 3.1. Session Tracking with JSP
 
 ### JSP session object
 - JSP session is created once for user's browser session. Unique for this user.
@@ -130,7 +130,7 @@ List<String> myStuff = new (List<String>) session.getAtrribute("myToDoList");
 | invalidate() : void | Invalidates this session and unbinds any object associated with it |
 | setMaxInactiveInterval(long mills) : void | Sets the idle time for a session to expire. The value is supplied in milliseconds |
 
-## 2. Personalize Content with Cookies
+## 3.2. Personalize Content with Cookies
 
 ### What is the purpose of cookies?
 - Personlize a web site for a user.
