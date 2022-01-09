@@ -1,4 +1,4 @@
-# JSP Fundametals
+# JSP and Servlet
 
 ### What are JSP and Servlet?
 - Java code that runs on the web server.
@@ -10,6 +10,10 @@
 ### Key building blocks
 - JSPs and Servlets are key components of the Java Enterprise Edition (Java EE).
 - Popular MVC frameworks are actually built on top of JSP and Sevlet such as Spring, JSF and Struts.
+
+---
+
+# JSP Fundametals
 
 ---
 
