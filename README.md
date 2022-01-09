@@ -1,5 +1,4 @@
-
-
+# Getting Started with JSP
 
 ## What are JSP and Servlet?
 - Java code that runs on the web server
