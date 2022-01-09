@@ -1,13 +1,13 @@
 # JSP and Servlet
 
-### What are JSP and Servlet?
+**What are JSP and Servlet?**
 - Java code that runs on the web server.
 - Reads user's actions, normally from HTML form.
 - Performs the work.
 - Returns an HTML page that is generated dynamically.
 
 
-### Key building blocks
+**Key building blocks**
 - JSPs and Servlets are key components of the Java Enterprise Edition (Java EE).
 - Popular MVC frameworks are actually built on top of JSP and Sevlet such as Spring, JSF and Struts.
 
@@ -15,25 +15,27 @@
 
 # JSP Fundametals
 
-### What is a JSP file?
+**What is a JSP file?**
 - An HTML page with some Java code sprinkled in.
 - Include dynamic content from Java code.
 
-### Where is the JSP processed?
+**Where is the JSP processed?**
 - JSP is processed on the server.
 - Result of Java code included in HTML returned to browser.
 
-### Where to place JSP file?
+**Where to place JSP file?**
 - The JSP file goes in the WebContent(or webapp) folder.
 - Must have .jsp extension.
 
-### JSP Scripting Elements
+**JSP Scripting Elements**
 | Element | Syntax |
 | ------ | ------ |
 | JSP Expression | **<%=** some java expression **%>** |
 | JSP Scriptlet | **<%** some Java code : 1 to many lines **%>** |
 | JSP Declaration | **<%!** variable or method declaration **%>** |
-
+  
+  
+  
 ## 1. JSP Expressions
 - Compute an expression.
 - Result is included in HTML returned to browser.  
@@ -47,7 +49,10 @@ _Code example_
 ```
 ## 2. JSP Scriptlets
 - Insert 1 to many lines of Java code.
-- To include content in the page use: **out.println(...)**  
+- To include content in the page use: **out.println(...)**
+- Minimize the amount of scriptlet code in a JSP.
+- Avoid dumping thousands of lines of code in a JSP.
+- Refactor this into a separate Java class. In other words, make use of MVC model.
   
 _Code example_
 ```java
@@ -55,12 +60,37 @@ _Code example_
   for (int i = 1; i <= 3; i++)
     out.println("<br />Hello World! - " + i);
 %>
-/*
-  Hello World! - 1
-  Hello World! - 2
-  Hello World! - 3
-*/
 ```
+## 3. JSP Declarations
+- Declare a method in the JSP page.
+- Call the method in the same JSP page.
+- Minimize the amount of scriptlet code in a JSP.
+- Avoid dumping thousands of lines of code in a JSP.
+- Refactor this into a separate Java class. In other words, make use of MVC model.
+  
+_Code example_
+```java
+<%!
+  String makeItLower(String data) {
+    return data.toLowerCase();
+  }
+%>
+
+Lower case "Hello World": <%= makeItLower("Hello World") %> // hello world
+```
+## 4. JSP Builit-In Server Objects
+- Given for free.
+- Use them directly in JSP pages.
+  
+_List of commonly used JSP objects_
+| Object | Description |
+| ------ | ------ |
+| request | Contains HTTP request headers and form data |
+| response | Provides HTTP support for sending response |
+| out | JspWriter for including content in HTML page |
+| session | Unique session for each user of the web application |
+| application | Shared data for all users of the web application |
+
 ---
 
 # State Management with JSP
