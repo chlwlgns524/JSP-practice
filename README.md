@@ -132,7 +132,7 @@ List<String> myStuff = new (List<String>) session.getAtrribute("myToDoList");
 | isNew() : boolean | Returns true if the session is new |
 | getId() : String | Returns the session id |
 | invalidate() : void | Invalidates this session and unbinds any object associated with it |
-| setMaxInactiveInterval(long mills) : void | Sets the idle time for a session to expire. The value is supplied in milliseconds |
+| setMaxInactiveInterval(int interval) : void | Sets the idle time for a session to expire. The value is supplied in seconds |
 
 ## 3.2. Personalize Content with Cookies
 
