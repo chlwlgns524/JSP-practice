@@ -59,6 +59,10 @@ _Code example_
 <%
   for (int i = 1; i <= 3; i++)
     out.println("<br />Hello World! - " + i);
+  
+  // Hello World! 1
+  // Hello World! 2
+  // Hello World! 3
 %>
 ```
 ## 2.3. JSP Declarations
