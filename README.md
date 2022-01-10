@@ -89,11 +89,11 @@ Lower case "Hello World": <%= makeItLower("Hello World") %> // hello world
 _List of commonly used JSP objects_
 | Object | Description |
 | ------ | ------ |
-| request | Contains HTTP request headers and form data |
-| response | Provides HTTP support for sending response |
-| out | JspWriter for including content in HTML page |
-| session | Unique session for each user of the web application |
-| application | Shared data for all users of the web application |
+| request | Contains HTTP request headers and form data. |
+| response | Provides HTTP support for sending response. |
+| out | JspWriter for including content in HTML page. |
+| session | Unique session for each user of the web application. |
+| application | Shared data for all users of the web application. |
 
 ---
 
@@ -129,10 +129,10 @@ List<String> myStuff = new (List<String>) session.getAtrribute("myToDoList");
 ### JSP session - Other useful methods
 | Method | Description |
 | ------ | ------ |
-| isNew() : boolean | Returns true if the server has created a session |
-| getId() : String | Returns a string specifying the identifier assigned to this session |
-| invalidate() : void | Invalidates this session then unbinds any objects bound to it |
-| setMaxInactiveInterval(int interval) : void | Specifies the time, in seconds, between client requests before the servlet container will invalidate this session  |
+| isNew() : boolean | Returns true if the server has created a session. |
+| getId() : String | Returns a string specifying the identifier assigned to this session. |
+| invalidate() : void | Invalidates this session then unbinds any objects bound to it. |
+| setMaxInactiveInterval(int interval) : void | Specifies the time, in seconds, between client requests before the servlet container will invalidate this session.  |
 
 ## 3.2. Personalize Content with Cookies
 
