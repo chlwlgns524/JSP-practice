@@ -130,9 +130,9 @@ List<String> myStuff = new (List<String>) session.getAtrribute("myToDoList");
 | Method | Description |
 | ------ | ------ |
 | isNew() : boolean | Returns true if the server has created a session |
-| getId() : String | Returns a string specifying the identifierassigned to this session |
-| invalidate() : void | Invalidates this session then unbinds any objects bound to it. |
-| setMaxInactiveInterval(int interval) : void | Specifies the time, in seconds, between client requests before the servlet container will invalidate this session.  |
+| getId() : String | Returns a string specifying the identifier assigned to this session |
+| invalidate() : void | Invalidates this session then unbinds any objects bound to it |
+| setMaxInactiveInterval(int interval) : void | Specifies the time, in seconds, between client requests before the servlet container will invalidate this session  |
 
 ## 3.2. Personalize Content with Cookies
 
