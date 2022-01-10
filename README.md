@@ -129,10 +129,10 @@ List<String> myStuff = new (List<String>) session.getAtrribute("myToDoList");
 ### JSP session - Other useful methods
 | Method | Description |
 | ------ | ------ |
-| isNew() : boolean | Returns true if the session is new |
-| getId() : String | Returns the session id |
-| invalidate() : void | Invalidates this session and unbinds any object associated with it |
-| setMaxInactiveInterval(int interval) : void | Sets the idle time for a session to expire. The value is supplied in seconds |
+| isNew() : boolean | Returns true if the server has created a session |
+| getId() : String | Returns a string specifying the identifierassigned to this session |
+| invalidate() : void | Invalidates this session then unbinds any objects bound to it. |
+| setMaxInactiveInterval(int interval) : void | Specifies the time, in seconds, between client requests before the servlet container will invalidate this session.  |
 
 ## 3.2. Personalize Content with Cookies
 
